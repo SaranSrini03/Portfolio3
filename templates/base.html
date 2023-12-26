@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Saran Srini</title>
+    <link rel="stylesheet" href="/style/basscss.css">
+</head>
+<body>
+    <div id="firstPage">
+        <h1 id="backgroundText">Home. Home. Home. Home.</h1>
+        <div id="topContainer">
+            <a href="#" onclick="topFunction()"><h1>SS</h1></a>
+        </div>
+        <div id="nameContainer">
+            <h1 id="name1">I'm <span id="name2">Saran Srini</span>.</h1>
+            <h3 id="name3">knows <span id="textChange"></span></h3>
+        </div>
+    </div>
+    <div id="secondPage">
+        <h1 id="backgroundText2">About. About. </h1>
+    </div>
+    <div id="thirdPage">
+        <h1 id="backgroundText3">Education. Experience. </h1>
+    </div>
+    <div id="fourthPage">
+        <h1 id="backgroundText4">Skills. Skills.</h1>
+    </div>
+    <div id="fifthPage">
+        <h1 id="backgroundText5">Ability. Ability.</h1>
+    </div>
+    <div id="sixthPage">
+        <h1 id="backgroundText6">Social. Social.</h1>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#textChange', {
+            strings: ["Web Development","UI/UX Design", "FullStack Development","Photography","Pixelart","Game Design","Photoshop"],
+            typeSpeed: 50,
+            backSpeed : 50,
+            loop : true,
+            fadeOut: true
+          });   
+        
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>
